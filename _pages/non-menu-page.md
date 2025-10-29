@@ -14,3 +14,11 @@ Heading 1
 
 Heading 2
 ======
+
+$a < 3$
+
+Thus we have \\( X = 32 \\)
+
+However,
+
+$$A = MEOW$$
