@@ -22,7 +22,7 @@ $$X = \begin{bmatrix}
     x_{n1} & x_{n2} & \dots & x_{np} 
 \end{bmatrix}$$
 
-Each data point $i$ can be represented by a vector $\mathbf{x}_{i}\in \mathbb{R}^{p}$ such that
+Each data point \\(i\\) can be represented by a vector \\(\mathbf{x}_{i}\in \mathbb{R}^{p}\\) such that
 
 $$
 \mathbf{X} = \begin{pmatrix} 
@@ -46,7 +46,7 @@ $$
 
 ## Variable / features
 
-Each variable $j$ can also be represented as a vector $\mathbf{x}^{j} \in \mathbb{R}^{n}$ containing the values taken by the data points,
+Each variable \\(j\\) can also be represented as a vector \\(\mathbf{x}^{j} \in \mathbb{R}^{n}\\) containing the values taken by the data points,
 $$
 \mathbf{x}^{(j)} = \begin{bmatrix} x_{1j} \\ x_{2j} \\ \vdots \\ x_{nj} \end{bmatrix} \in \mathbb{R}^{n}
 $$
@@ -80,9 +80,9 @@ $$
 
 ## Weighted data
 
-It may be interesting to weights data points depending on their importance. Each data point is associated with a weights $w_{i} >0$ such thtat $\sum_{i=1}^{n}w_{i}=1$. 
+It may be interesting to weights data points depending on their importance. Each data point is associated with a weights \\(w_{i} >0\\) such that \\(\sum_{i=1}^{n}w_{i}=1\\).
 
-The weights matrix $\mathbf{D}_{w}$ or $\mathbf{W}$ (depending on the field) is a diagonal matrix,
+The weights matrix \\(\mathbf{D}_{w}\\) or \\(\mathbf{W}\\) (depending on the field) is a diagonal matrix,
 $$
 \mathbf{D}_{w}= \text{diag}(w_{1}, w_{2},\dots, w_{n})= \begin{bmatrix}
 w_{1} & 0 & \dots & 0 \\ 
@@ -92,11 +92,12 @@ w_{1} & 0 & \dots & 0 \\
 \end{bmatrix}
 $$
 
-The most frequent case is the case of uniform weights, meaning all data points have the same weights, $w_{i}=\frac{1}{n}$.
+The most frequent case is the case of uniform weights, meaning all data points have the same weights, \\(w_{i}=\frac{1}{n}\\).
 
 ## Empirical mean
 
-The empircal mean of the feature $j$ is:$$
+The empirical mean of the feature \\(j\\) is:
+$$
 \bar{x}^{j}= \sum_{i=1}^{n}w_{i}x_{i}^{j} \quad \text{weighted sum of the columns $j$ over all $n$ data points}
 $$
 Or, with matrices:
@@ -106,16 +107,20 @@ $$
 
 ## Center of gravity
 
-Given a set of data points, the centre of gravity $\mathbf{g}$ is given by$$
+Given a set of data points, the centre of gravity \\(\mathbf{g}\\) is given by:
+$$
 \mathbf{g} = \begin{bmatrix}\bar{x}^{1} & \bar{x}^2 & \dots & \bar{x}^{j} & \dots & \bar{x}^{p} \end{bmatrix}^T
 $$
-or with matrices:$$
+or with matrices:
+$$
 \mathbf{g} = \mathbf{X}^{T}\mathbf{D}_{w}\mathbf{1}_{n}
 $$
-We can denote the centered data $\mathbf{\tilde{X}} = \mathbf{X} - \mathbf{1}_{n}\mathbf{g}^{T}$ 
+We can denote the centered data \\(\mathbf{\tilde{X}} = \mathbf{X} - \mathbf{1}_{n}\mathbf{g}^{T}\\)
+
 ## Empirical variance
 
-The empirical variance of feature $j$ is:$$
+The empirical variance of feature \\(j\\) is:
+$$
 s_{j}^{2}=\text{var}(\mathbf{x}^{j}) = \sum_{i=1}^{n}w_{i}(x_{i}^{j}-\bar{x}^{j})^{2}=\sum_{i=1}^{n}w_{i}(x_{i}^{j})^{2}-(\bar{x}^{j})^{2} = \sum_{i=1}^{n}w_{i}(\tilde{x}_{i}^{j})^{2}=\text{var}(\mathbf{\tilde{x}}^{j})
 $$
 or with matrices:
@@ -125,23 +130,26 @@ $$
 
 ## Empirical covariance
 
-The empirical covariance of features $j$ and $k$ is $$
+The empirical covariance of features \\(j\\) and \\(k\\) is:
+$$
 s_{jk}=\text{cov}(\mathbf{x}^{j},\mathbf{x}^{k}) = \sum_{i=1}^{n}w_{i}(x_{i}^{j}- \bar{x}^{j})(x_{i}^{k}-\bar{x}^{k})=\sum_{i=1}^{n}w_{i}x_{i}^{j}x_{i}^{k}-\bar{x}^{j}\bar{x}^{k}=\sum_{i=1}^{n}w_{i}\tilde{x}_{i}^{j}\tilde{x}_{i}^{k}=\text{cov}(\mathbf{\tilde{x}}^{j}, \mathbf{\tilde{y}}^{k})
 $$
-Or with matrices:$$
+Or with matrices:
+$$
 s_{jk}= \mathbf{\tilde{y}}^{j^{T}}\mathbf{D}_{w}\mathbf{y}^{k}
 $$
 
 ## Coefficient of empirical correlation
 
-The empirical coefficient of correlation between features $j$ and $k$ is given by:$$
+The empirical coefficient of correlation between features \\(j\\) and \\(k\\) is given by:
+$$
 r_{kj}= \text{cor}(\mathbf{x}^{j}, \mathbf{x}^{k})= \frac{\text{cov}(\mathbf{x}^{j}, \mathbf{x}^{k})}{\sqrt{\text{var}(\mathbf{x}^{j})}\sqrt{\text{var}(\mathbf{x}^{k})}} = \frac{s_{jk}}{s_{j}s_{k}} =\text{cor}(\mathbf{\tilde{x}^{j}}, \mathbf{\tilde{x}}^{k} )
 $$
 
-By construction, 
-* $-1 \leq r_jk \leq 1$
-* $\lvert r_{jk}\lvert=1 \iff$ The features are almost surely linked by an affine relation
-* $\lvert r_{jk}\lvert =0 \iff$ The features are uncorrelated (no affine relation) 
+By construction,
+* \\(-1 \leq r_{jk} \leq 1\\)
+* \\(\lvert r_{jk}\rvert=1 \iff\\) The features are almost surely linked by an affine relation
+* \\(\lvert r_{jk}\rvert =0 \iff\\) The features are uncorrelated (no affine relation)
 
 ## Useful matrices
 
@@ -177,6 +185,7 @@ $$\mathbf{Z} = \mathbf{\tilde{X}}\mathbf{D}_{1/s}$$
 
 ## Metric space of data points
 
-To characterise the structure, we focus on the proximity between data points in $\mathbb{R}^{p}$ using $$
+To characterise the structure, we focus on the proximity between data points in \\(\mathbb{R}^{p}\\) using 
+$$
 d_{M}^{2}(\mathbf{x}_{i}, \mathbf{x}_{l}) = \lVert \mathbf{x}_{i}- \mathbf{x}_{l}\lVert_{M}^{2}=(\mathbf{x}_{i}- \mathbf{x}_{l})^{T}\mathbf{M} (\mathbf{x}_{i}- \mathbf{x}_{l})
 $$
