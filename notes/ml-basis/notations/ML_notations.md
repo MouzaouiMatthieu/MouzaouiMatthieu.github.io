@@ -14,7 +14,7 @@ author_profile: true
 If the data is quantitative, it can be presented using a matrix of size $(n, p)$ where
 	- Each row represents a data point (observation / individual)
 	- Each column represents a variable
-Usually data are denoted using $\mathbf{X}$, with:
+Usually data are denoted using \\(\mathbf{X}\\), with:
 $$X = \begin{bmatrix} 
     x_{11} & x_{12} & \dots & x_{1p} \\
     x_{21} & x_{22} & \dots & x_{2p} \\
