@@ -21,4 +21,4 @@ A short description about this 'module'
 ## Classification
 
 A short description about this 'module'
-- [Supervised Classification](/notes/ml-basis/classification)
+- [Supervised Classification](/notes/ml-basis/classification/classification)
