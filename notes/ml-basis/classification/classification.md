@@ -303,6 +303,7 @@ plot_decision_boundary(lda_nonlinear, X_nonlinear, y_nonlinear, axs[1, 0], "LDA 
 plot_decision_boundary(qda_nonlinear, X_nonlinear, y_nonlinear, axs[1, 1], "QDA - Nonlinearly separable data, nice separation")
 
 ```
+
 <img src="rsc/lda_qda.png" alt="LDA and QDA illustration" style="width:100%;">
 
 
