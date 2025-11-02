@@ -1,6 +1,6 @@
 ---
 title: "Supervised Classification, intro"
-permalink: /notes/ml-basis/classification
+permalink: /notes/ml-basis/classification/classification
 layout: single
 author_profile: true
 ---
