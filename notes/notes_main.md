@@ -17,3 +17,5 @@ Although these documents are mainly written for self-reference, you are very wel
 Contents:
 
 [Machine Learning Basis](/notes/ml-basis/)
+
+[Statistics Basis](/notes/stats-basis/)
