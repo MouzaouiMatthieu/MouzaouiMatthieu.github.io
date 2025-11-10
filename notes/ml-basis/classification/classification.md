@@ -19,7 +19,7 @@ author_profile: true
 
 ## Introduction
 
-Given a vector or "'inputs", we want to predict which "class" it belongs too. We assume the set of possible classes $$\mathcal{C}_{1}, \mathcal{C}_{2}, \dots, \mathcal{C}_{K}$$ is known. We also have a set called a **training set** which is a set of items $$\mathcal{D}_{\text{train}} = \{ (\mathbf{x}_{i}, y_{i})\}_{i=1}^{n}$$ in which we know the inputs $$\mathbf{x}_{i}$$ and their corresponding labels $$y_{i}$$. Once a **classifier** is learned, we use it to predict the class $$y^{*}$$ of a new input $$\mathbf{x}^{*}$$.  
+Given a vector or "'inputs", we want to predict which "class" it belongs to. We assume the set of possible classes $$\mathcal{C}_{1}, \mathcal{C}_{2}, \dots, \mathcal{C}_{K}$$ is known. We also have a set called a **training set** which is a set of items $$\mathcal{D}_{\text{train}} = \{ (\mathbf{x}_{i}, y_{i})\}_{i=1}^{n}$$ in which we know the inputs $$\mathbf{x}_{i}$$ and their corresponding labels $$y_{i}$$. Once a **classifier** is learned, we use it to predict the class $$y^{*}$$ of a new input $$\mathbf{x}^{*}$$.  
 
 The problem can be solved in different ways, a non exhaustive list includes:
 - **Direct classification function**: Learn a function **$$f(x) = C_k$$** mapping inputs to classes.
