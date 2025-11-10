@@ -14,6 +14,8 @@ author_profile: true
 
 Randomness seems to be a part of our daily lives. Or at least, we think so. Maybe we call 'random' events for which we lack the true understanding of causes leading to it. Take a coin toss for instance. We usually agree the results (head or tail) is random. Each event occur with a certain probability. One could argue, if given the coin mass, exact shape and initial applied force to the system, we could deterministically deduce the result of the coin toss. When discussing randomness at a philosophy tea-bar (if this ever happens to you, you never know), quantum mechanic we be quickly mentioned. It seems, the explanation of quantum mechanic could be non determinist (*Bell's theorem)*. Or we might just be far too ignorant on the matter yet. Nevertheless, there is a need to model this randomness.
 
+<img src="rsc/proba/futur.gif" alt="Is there randomness?" style="width:100%;"/>
+
 Probability theory offers a mathematical models to apprehend the world, causes and effects. It is an efficient theory which can be applied to various domains, and is thus popular. 
 
 ## Randomness and Models
