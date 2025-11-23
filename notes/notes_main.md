@@ -3,6 +3,7 @@ title: "Notes"
 permalink: /notes/
 layout: single
 author_profile: true
+description: "Collection of notes on various topics including Machine Learning, Statistics and Cybersecurity."
 ---
 
 Main page of notes, under construction.

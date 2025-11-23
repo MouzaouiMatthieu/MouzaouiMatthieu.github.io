@@ -3,6 +3,7 @@ title: "ML Notations"
 permalink: /notes/ml-basis/ml-notations
 layout: single
 author_profile: true
+description: "Just to define the notations used in Machine Learning basis notes."
 ---
 
 

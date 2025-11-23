@@ -3,6 +3,7 @@ title: "Descriptive Statistics"
 permalink: /notes/stats-basis/descriptive-statistics
 layout: single
 author_profile: true
+description: "Introduction to descriptive statistics concepts and tools (measures of central tendency, dispersion, graphical representations)"
 ---
 
 > [!tldr] Summary

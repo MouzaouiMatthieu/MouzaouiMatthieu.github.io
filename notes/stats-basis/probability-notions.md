@@ -3,6 +3,7 @@ title: "Probability Notions"
 permalink: /notes/stats-basis/probability-notions
 layout: single
 author_profile: true
+description: "Probabilities 101, definitions and basic concepts."
 ---
 > [!tldr] Summary
 > Probabilities 101, just to be clear later. Maybe a more precise note will come later.

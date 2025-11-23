@@ -3,6 +3,7 @@ title: "ML Basis"
 permalink: /notes/ml-basis/
 layout: single
 author_profile: true
+description: "Fundamental concepts and tools in Machine Learning, including multivariate data analysis and classification."
 ---
 
 # Machine Learning - Basis, tools. 

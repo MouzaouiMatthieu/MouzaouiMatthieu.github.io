@@ -1,8 +1,14 @@
 ---
 layout: archive
-title: "CV"
+title: "Matthieu Mouzaoui CV"
 permalink: /cv/
 author_profile: true
+description: "Matthieu Mouzaoui — PhD student at Inria PIRAT. Research: adversarial robustness for ML‑based NIDS."
+long_description: >-
+  Curriculum Vitae of Matthieu Mouzaoui, PhD student at Inria PIRAT. Research:
+  Adversarial robustness for Machine-Learning based Network Intrusion Detection Systems
+  (ML‑based NIDS), especially Graph Neural Networks (GNNs). Internship at Inria
+  Grenoble-Alpes, team Statify with Pedro L.C. Rodrigues on simulation-based inference (SBI).
 redirect_from:
   - /resume
 ---

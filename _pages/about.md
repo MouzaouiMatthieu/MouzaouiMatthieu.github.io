@@ -1,17 +1,18 @@
 ---
 permalink: /
 title: "Hello there!"
+description: "Matthieu Mouzaoui PhD student Inria PIRAT. Adversarial robustness of Machine-Learning Network Intrusion Detection Systems (ML-NIDS) Graph Neural Networks (GNN)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+# Matthieu Mouzaoui — PhD Student at Inria PIRAT
 <div style="background-color: #ffdddd; border-left: 5px solid #ff5555; padding: 10px; margin-bottom: 20px;">
   <strong>⚠️ Note :</strong> Site under construction. Come back in a few days!
 </div>
 
-I am a PhD student (2024-2027) at [Inria](https://www.inria.fr/) in Rennes (Brittany🧈, France), within the [PIRAT](https://team.inria.fr/pirat/) research team.
+I am Matthieu Mouzaoui, a PhD student (2024-2027) at [Inria](https://www.inria.fr/) in Rennes (Brittany🧈, France), within the [PIRAT](https://team.inria.fr/pirat/) research team.
 
 My research interests are about Adversarial Robustness for **Machine Learning-based Network Intrusion Detection System (ML-NIDS)**.  
 
