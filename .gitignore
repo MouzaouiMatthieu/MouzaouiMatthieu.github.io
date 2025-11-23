@@ -21,3 +21,6 @@ package-lock.json
 
 # Ignore local documentation file with procedures (personal notes)
 docs/DEVELOPMENT_WORKFLOW.txt
+
+# todo
+todo.txt
