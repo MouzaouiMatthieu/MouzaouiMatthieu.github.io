@@ -3,6 +3,7 @@ title: "Principal Component Analysis (PCA)"
 permalink: /notes/ml-basis/multivariate-data-analysis/pca/
 layout: single
 author_profile: true
+description: "Notes on Principal Component Analysis (PCA), a dimension reduction technique in multivariate data analysis, used in Machine Learning."
 ---
 
 <div data-nosnippet style="background-color: #ffdddd; border-left: 5px solid #ff5555; padding: 10px; margin-bottom: 20px;">

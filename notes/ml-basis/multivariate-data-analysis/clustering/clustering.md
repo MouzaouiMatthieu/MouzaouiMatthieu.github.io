@@ -3,6 +3,7 @@ title: "Clustering, intro"
 permalink: /notes/ml-basis/multivariate-data-analysis/clustering/
 layout: single
 author_profile: true
+description: "Introduction to clustering methods in multivariate data analysis, including partitioning and hierarchical approaches.(K-means, dendrograms, etc.)"
 ---
 
 <div style="background-color: #ffdddd; border-left: 5px solid #ff5555; padding: 10px; margin-bottom: 20px;">

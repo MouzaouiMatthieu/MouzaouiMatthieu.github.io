@@ -3,6 +3,7 @@ title: "Statistics Basis"
 permalink: /notes/stats-basis/
 layout: single
 author_profile: true
+description: "Fundamental concepts and tools in Statistics, including descriptive statistics, probability, estimation, hypothesis testing, and linear regression."
 ---
 
 # Statistics - Basis, tools.

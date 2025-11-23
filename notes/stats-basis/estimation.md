@@ -3,6 +3,7 @@ title: "Estimation"
 permalink: /notes/stats-basis/estimation
 layout: single
 author_profile: true
+description: "Introduction to estimation theory concepts and tools. (populations, samples, estimators, maximum likelihood, properties of estimators.)"
 ---
 > [!tldr] Summary
 > 101

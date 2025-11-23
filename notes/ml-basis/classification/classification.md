@@ -3,6 +3,7 @@ title: "Supervised Classification, intro"
 permalink: /notes/ml-basis/classification/classification
 layout: single
 author_profile: true
+description: "Supervised classification, including generative and discriminative models, evaluation metrics, and examples like LDA and QDA."
 ---
 
 <div style="background-color: #ffdddd; border-left: 5px solid #ff5555; padding: 10px; margin-bottom: 20px;">
