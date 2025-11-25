@@ -7,6 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 # Matthieu Mouzaoui — PhD Student at Inria PIRAT
 <div style="background-color: #ffdddd; border-left: 5px solid #ff5555; padding: 10px; margin-bottom: 20px;">
   <strong>⚠️ Note :</strong> Site under construction. Come back in a few days!
