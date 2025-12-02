@@ -318,7 +318,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap  # Disabled in favor of custom sitemap.xml
   - jekyll-redirect-from
   - jemoji
 
@@ -327,7 +327,7 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap  # Using custom sitemap.xml
   - jekyll-redirect-from
   - jemoji
 
