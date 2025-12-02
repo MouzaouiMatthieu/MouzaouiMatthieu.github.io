@@ -3,51 +3,17 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Page d'accueil -->
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Pages statiques - FILTRÉES -->
   {% for page in site.pages %}
-    {% assign exclude_extensions = ".css|.js|.xml|.json|.txt|.pdf|.zip|.md" | split: "|" %}
-    {% assign exclude_dirs = "/assets/|/feed|/sitemap" | split: "|" %}
-    
-    {% assign should_exclude = false %}
-    
-    <!-- Vérifier les extensions -->
-    {% for ext in exclude_extensions %}
-      {% if page.url contains ext %}
-        {% assign should_exclude = true %}
-      {% endif %}
-    {% endfor %}
-    
-    <!-- Vérifier les dossiers -->
-    {% for dir in exclude_dirs %}
-      {% if page.url contains dir %}
-        {% assign should_exclude = true %}
-      {% endif %}
-    {% endfor %}
-    
-    <!-- Exclure les pages spéciales -->
-    {% if page.url contains "404" 
-      or page.url contains "google" 
-      or page.url == "/"
-      or page.url == "/sitemap.xml"
-    %}
-      {% assign should_exclude = true %}
-    {% endif %}
-    
-    <!-- Inclure la page si non exclue -->
-    {% unless should_exclude %}
+    {% unless page.url contains "404" or page.url contains "google" %}
       <url>
-        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: '.html' }}</loc>
-        {% if page.last_modified_at %}
-          <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-        {% elsif page.date %}
+        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+        {% if page.date %}
           <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
         {% else %}
           <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -119,22 +85,16 @@ layout: null
       <priority>0.6</priority>
     </url>
   {% endfor %}
-  
-  <!-- Notes (si vous avez une collection 'notes') -->
-  {% if site.notes %}
-    {% for note in site.notes %}
-      <url>
-        <loc>{{ site.url }}{{ site.baseurl }}{{ note.url }}</loc>
-        {% if note.last_modified_at %}
-          <lastmod>{{ note.last_modified_at | date_to_xmlschema }}</lastmod>
-        {% elsif note.date %}
-          <lastmod>{{ note.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-          <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-    {% endfor %}
-  {% endif %}
+  {% for note in site.notes %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ note.url }}</loc>
+      {% if note.date %}
+        <lastmod>{{ note.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  {% endfor %}
 </urlset>
