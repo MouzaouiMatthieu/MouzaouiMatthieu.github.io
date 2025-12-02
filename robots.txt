@@ -1,3 +1,4 @@
-Sitemap: https://mouzaouimatthieu.github.io/sitemap.xml
 User-agent: *
 Disallow:
+
+Sitemap: https://mouzaouimatthieu.github.io/sitemap.xml
